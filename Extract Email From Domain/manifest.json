@@ -1,0 +1,34 @@
+{
+    "manifest_version": 3,
+    "name": "Email Scraper",
+    "version": "1.0",
+    "description": "Scrape email addresses from websites by domain.",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "popup.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "scripting",
+        "tabs",
+        "activeTab"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icon.png",
+            "48": "icon.png",
+            "128": "icon.png"
+        }
+    },
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    }
+}

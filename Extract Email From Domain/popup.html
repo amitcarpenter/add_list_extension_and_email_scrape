@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    li.email-list-item {
+      list-style: NONE;
+      padding: 0;
+      font-size: 12px;
+      padding-bottom: 14px;
+    }
+
+    button {
+      position: absolute;
+      right: 12px;
+      padding: 2px 6px;
+      font-size: 11px;
+      cursor: pointer;
+      background-color: #19324f;
+      color: white;
+      border-radius: 8px;
+    }
+
+    ul#emailList {
+      padding: 0px;
+      overflow: auto;
+    }
+
+    .container {
+      width: 350px;
+      font-size: 12px;
+    }
+
+    body {
+      background-color: #c8c5c68a;
+      border-radius: 10px;
+    }
+
+    .pelo {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin: auto;
+      font-weight: bold;
+    }
+
+    .myDrop {
+      display: flex;
+      position: fixed;
+      bottom: 22px;
+      font-size: 12px;
+    }
+
+    #categoryDropdown {
+      font-size: 12px;
+    }
+
+    .email-list-container {
+      max-height: 150px;
+      overflow-y: auto;
+    }
+
+    footer {
+      margin-top: 50px;
+
+    }
+
+    .email-container {
+      overflow-y: scroll;
+      position: relative;
+      padding: 20px;
+      height: 250px;
+    }
+
+    .secretCodeStyle {
+      margin-top: 8px;
+    }
+  </style>
+  <title>Email Scraper - Results</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h2>Email Addresses for Domain: <span id="domain"></span></h2>
+
+      <p><span id="currentTabUrl"></span></p>
+      <p class="pelo">
+        Current Tab Domain :--<span id="currentTabDomain"></span>
+      </p>
+      <!-- <div class="secretCodeStyle">
+          <label for="categoryDropdown">secretCode:</label>
+          <input type="text" name="secretCode" id="secretCode" />
+        </div> -->
+    </header>
+    <hr />
+
+    <div class="email-container">
+      <span id="email"></span>
+      <ul id="emailList"></ul>
+      <span id="extensionButton"></span>
+    </div>
+  </div>
+
+  <hr />
+  <footer>
+    <div class="myDrop">
+      <label for="categoryDropdown">Select Category:</label>
+      <select id="categoryDropdown"></select>
+    </div>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>

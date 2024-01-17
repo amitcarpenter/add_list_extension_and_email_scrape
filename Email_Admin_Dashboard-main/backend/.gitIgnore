@@ -1,0 +1,92 @@
+# Ignore Node.js modules
+node_modules/
+
+# Ignore npm's cache
+.npm/
+
+# Ignore logs and generated files
+logs/
+*.log
+*.log.*
+*.swp
+
+# Ignore database files
+*.sqlite
+*.db
+
+# Ignore environment-specific files
+.env
+.env.local
+.env.*.local
+
+# Ignore IDE and editor specific files
+.vscode/
+.idea/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore build and output directories
+dist/
+build/
+out/
+
+# Ignore configuration files
+*.config.js
+
+# Ignore dependencies installed via npm or yarn
+yarn.lock
+package-lock.json
+
+# Ignore backup files
+*~
+
+# Ignore user-specific files
+*.suo
+*.user
+*.sln.docstates
+*_i.c
+*_p.c
+*.ilk
+*.ncb
+*.suo
+*.user
+*.pdb
+
+# Ignore compiled binary files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Ignore packaging and dependency files
+*.zip
+*.rar
+*.gz
+*.tar
+*.7z
+*.dmg
+*.iso
+*.bin
+*.gz
+*.bz2
+*.tar.gz
+*.tgz
+*.tar.bz2
+
+# Ignore miscellaneous files
+*.bak
+*.swp
+*.tmp
+*.a
+*.log
+*.fla
+*.swf
+*.as
+*.as3proj
+*.fxp
+*.swc
+*.flv
+*.psd
